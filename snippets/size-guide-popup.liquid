@@ -1,0 +1,156 @@
+<span class="background-overlay"></span>
+      <div class="sizeguide-main">
+        <span class="size-close-btn"></span>
+        <div class="modal-content">
+    <div class="modal-nav">
+        <div class="modal-nav-item size-active" data-class="bangle-content">BANGLES</div>
+        <div class="modal-nav-item" data-class="ring-content">RINGS</div>
+        <div class="modal-nav-item" data-class="necklace-content">NECKLACES</div>
+    </div>
+
+    <div class="modal-main">
+        <div class="modal-main-item size-visible" data-class="bangle-content">
+            <div class="bangle-sizes-intro">
+                <p>Bangle size is determined by the size of your hand and not your wrist. To find yours, simply tuck
+                    your thumb into the palm of your hand (as if about to put on a bangle), and using a measuring tape,
+                    measure your hand all the way around the set of knuckles closest to your wrist. Compare that
+                    measurement to the chart below. The standard size in US is 3 for round bangles, and 2 for oval
+                    bangles.</p>
+                <a href="https://cdn.shopify.com/s/files/1/0629/9002/4756/files/size-guide-bangles.pdf?v=1712222014" target="_blank" rel="noopener noreferrer">
+                    <h5>Download Our Easy Size Guide (PDF)</h5>
+                </a>
+            </div>
+            <div class="bangle-sizes-container grid-column-3">
+                <h5>SHAPE</h5>
+                <h5>US SIZE</h5>
+                <h5 class="hide-on-mobile">HAND CIRCUMFERENCE</h5>
+                <h5 class="show-on-mobile">HAND CIRC</h5>
+                <div>ROUND</div>
+                <div>0</div>
+                <div>6.75 in</div>
+                <div class="white">_</div>
+                <div>1</div>
+                <div>7.25 in</div>
+                <div class="white">_</div>
+                <div>2</div>
+                <div>7.5 in</div>
+                <div class="white">_</div>
+                <div>3 (STANDARD)</div>
+                <div>8 in</div>
+                <div class="white">_</div>
+                <div>4</div>
+                <div>8.75 in</div>
+                <div>OVAL</div>
+                <div>0</div>
+                <div>6.75 in</div>
+                <div class="white">_</div>
+                <div>1</div>
+                <div>7.25 in</div>
+                <div class="white">_</div>
+                <div>2 (STANDARD)</div>
+                <div>7.75 in</div>
+                <div class="white">_</div>
+                <div>3</div>
+                <div>8 in</div>
+                <div class="white">_</div>
+                <div>4</div>
+                <div>8.75 in</div>
+            </div>
+        </div>
+
+        <div class="modal-main-item" data-class="ring-content">
+            <div class="ring-sizes-intro">
+                <p>Ring size is determined by inner diameter, not circumference. To find yours, cut a thin piece of
+                    paper and wrap it around your finger, keeping it close to your bottom knuckle. Mark where the paper
+                    meets and measure its length with a ruler. US 7 is the standard ring size. Measurements below in
+                    millimeters.</p>
+                <a href="https://cdn.shopify.com/s/files/1/0629/9002/4756/files/size-guide-rings.pdf?v=1712222013" target="_blank" rel="noopener noreferrer">
+                    <h5>Download Our Easy Size Guide (PDF)</h5>
+                </a>
+            </div>
+            <div class="ring-sizes-container grid-column-3">
+                <h5>US SIZE</h5>
+                <h5 class="hide-on-mobile">INNER DIAMETER</h5>
+                <h5 class="show-on-mobile">INNER DIA</h5>
+                <h5 class="hide-on-mobile">INNER CIRCUMFERENCE</h5>
+                <h5 class="show-on-mobile">INNER CIRC</h5>
+                <div>6</div>
+                <div>16.4 mm</div>
+                <div>51.5 mm</div>
+                <div>7 (STANDARD)</div>
+                <div>17.4mm</div>
+                <div>54.5mm</div>
+                <div>8</div>
+                <div>18.2mm</div>
+                <div>57.0mm</div>
+            </div>
+        </div>
+
+        <div class="modal-main-item" data-class="necklace-content"> 
+          <div class="necklace-sizes-intro">
+                <p>Discover our different necklace lengths (in) with the chart below, and see how your perfect pendant
+                    pairs with long layers. Measurements below in inches.</p>
+            </div>
+            <div class="necklace-sizes-container ">
+                <div class="necklace-sizes-grid grid-column-2">
+                    <h5>LENGTH (IN)</h5>
+                    <h5>LENGTH (CM)</h5>
+                    <div>16"</div>
+                    <div>40.64cm</div>
+                    <div>18"</div>
+                    <div>45.72cm</div>
+                    <div>33"</div>
+                    <div>83.82cm</div>
+                    <div>37"</div>
+                    <div>93.98cm</div>
+                    <div>42"</div>
+                    <div>106.68cm</div>
+                </div>
+                <div class="necklace-sizes-image">
+                    <img src="https://cdn.shopify.com/s/files/1/0629/9002/4756/files/size-guide-necklaces.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-footnote">
+        <h5>Don't see your size?</h5>
+        <div>Please contact us, as additional sizes are available. <a onclick="GorgiasChat.open();" class="livechatopen"
+                id="size-guide-hero-action">Chat now</a></div>
+    </div>
+
+    <div class="loadingOverlay" style="display: none;"></div>
+</div>
+      </div>
+
+
+
+<script type="text/javascript">
+  var size_tab = document.querySelectorAll('.modal-nav .modal-nav-item')
+
+    if(size_tab.length > 0){
+        size_tab.forEach(function (item) {
+            item.addEventListener('click', function () {
+                const size_item = this.getAttribute('data-class');
+                const currentelement = this;
+                size_tab.forEach(function (tablink) {
+                    tablink.classList.remove('size-active');
+                });
+                currentelement.classList.add('size-active');
+
+                document.querySelectorAll('.modal-main-item').forEach(function (element) {
+                    if (element.getAttribute('data-class') !== size_item) {
+                        element.classList.remove('size-visible');
+                    }
+
+                    const tabclass = document.querySelectorAll(`[data-class="${size_item}"]`);
+
+                    tabclass.forEach(function (tab_element) {
+                        tab_element.classList.add('size-visible');
+                    });
+                });
+
+            });
+        });
+    }
+</script>

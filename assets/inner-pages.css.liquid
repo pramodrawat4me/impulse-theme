@@ -1,0 +1,164 @@
+body { font-family: sans-serif !important; }
+[data-type_headers_align_text=true] .section-header { display: none; }
+
+/* .rte img, .rte-setting img{
+height:80px;
+} */
+.stylist .image { width: 100%; display: flex; justify-content: center; align-items: center; }
+.stylist .service { display: flex; flex-flow: row wrap; position: relative; }
+.stylist .service ul { display: flex; justify-content: space-evenly; flex-flow: row wrap; column-gap: 75px; margin: 0; }
+.stylist .service ul li { display: flex; max-width: calc(26% - 75px); text-align: center; width: 100%; }
+.stylist .service img { width: 50%; }
+.stylist .service ul li a { text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.cms-page .rte .stylist .service ul h2 { font-size: 16px; text-align: center !important; letter-spacing: .16666666666666666em !important; line-height: 1.6666666666666667em !important; margin-top: 10px !important; margin-bottom: 10px !important; color: #333 !important; font-weight: 600 !important; }
+.stylist .service ul li p { text-align: center !important; letter-spacing: .06666666666666667em !important; font-size: 16px; line-height: 1.5em !important; color: #4a4a4a; margin-top: 10px !important; margin-bottom: 10px !important; font-weight: 300 !important; }
+.stylist .page-content, .shopify-email-marketing-confirmation__container, .shopify-policy__container { margin-left: auto; margin-right: auto; max-width: 91.71429rem; padding: 0 6rem; width: 100%; }
+.stylist .page-content, .shopify-email-marketing-confirmation__container, .shopify-policy__container { padding-bottom: 40px; padding-top: 5rem; margin-right: auto; max-width: 91.71429rem; }
+.stylist .consult_a_stylist { display: flex; flex-wrap: row wrap; width: 100%; justify-content: center; }
+.stylist .block { position: relative; }
+.stylist .block img { width: 100%; height: 100%; }
+.stylist .block .wrapper { position: absolute; top: 0; bottom: 0; right: 0; display: flex; align-items: center; justify-content: flex-end; width: 35%; cursor: pointer; }
+
+.cms-page .rte .stylist .block .wrapper h2 { text-align: center; letter-spacing: .1em !important; font-family: 'Helvetica Neue Light'; font-weight: 100 !important; line-height: 1em !important; color: #333 !important; font-size: 53px; margin: 0 !important; }
+.stylist .block .wrapper .chat { font-size: 15px; letter-spacing: .2727272727272727em !important; line-height: 1.8181818181818181em !important; text-align: center !important; margin: 20px 0px !important; font-weight: 700 !important; text-decoration: underline !important;font-family: 'Helvetica Neue bold';}
+.cms-page .rte .stylist .mail { text-align: center !important; font-size: 14px; letter-spacing: .0625em !important; line-height: 1.5625em !important; margin: 40px 0 !important; font-weight: 300 !important; padding: 10px !important;font-family: 'Helvetica Neue light';}
+.cms-page .rte .stylist h2 { text-align: center !important; font-size: 20px; margin-top: 80px !important; margin-bottom: 40px !important; letter-spacing: 1em !important; line-height: .8em !important; color: #0009 !important; font-weight: 600 !important; }
+.stylist .chat_with_stylist { position: relative; }
+.stylist .chat_with_stylist img { width: 100%; height: 100%; }
+.stylist .chat_with_stylist .wrapper { position: absolute; top: 0; bottom: 0; right: 0; display: flex; flex-wrap: row wrap; align-items: center; justify-content: flex-end; width: 34%; cursor: pointer; margin-right: 30px; color: #fff; }
+.stylist .chat_with_stylist .wrapper .content { letter-spacing: .06666666666666667em !important; line-height: 1.6666666666666667em !important; margin-top: 15px !important; margin-bottom: 15px !important; text-align: center !important; font-weight: 300 !important; font-size: 20px; }
+.cms-page .rte .stylist .chat_with_stylist .wrapper h2 { color: #fff !important; text-align: center !important; letter-spacing: .2em !important; line-height: 1.2em !important; font-weight: 300 !important; font-size: 25px; margin: 0 !important; }
+.cms-page .rte .stylist .chat_with_stylist .wrapper .desc {color: #fff; letter-spacing: .06666666666666667em !important; line-height: 1.6666666666666667em !important; margin-top: 15px !important; margin-bottom: 15px !important; font-size: 20px; font-weight: 300 !important; }
+.cms-page .rte .stylist .chat_with_stylist .wrapper .chat { color: #fff;font-family:'Helvetica Neue Bold';font-size: 11px; text-align: center !important; letter-spacing: .2727272727272727em !important; line-height: 1.8181818181818181em !important; font-weight: 700 !important; text-decoration: underline !important; margin: 30px 0px !important; }
+@media(max-width:1200px) {
+  .cms-page .rte .stylist .block .wrapper h2 { font-size: 40px; }
+  .stylist .service ul { column-gap: 30px; }
+  .stylist .service ul li { max-width: calc(26% - 30px); }
+}
+@media(max-width:992px) {
+  .stylist .block .wrapper { position: initial; width: 100%; margin-top: 7%; justify-content: center; }
+  .stylist .service ul { column-gap: 10px; }
+  .stylist .service ul li { max-width: calc(26% - 10px); }
+  .cms-page .rte .stylist .block .wrapper h2 { font-size: 25px; }
+  .stylist .block .wrapper .chat { margin: 10px 0 !important; font-size: 12px; }
+  .stylist .service ul li p { display: flex; justify-content: center; }
+  .cms-page .rte .stylist h2 { margin-top: 30px !important; margin-bottom: 30px !important; letter-spacing: 0.8rem !important; line-height: 1.8em !important; }
+  .cms-page .rte .stylist .chat_with_stylist .wrapper { position: initial; color: #000; width: 100%; justify-content: center; }
+  .cms-page .rte .stylist .chat_with_stylist .wrapper h2 { letter-spacing: 0.1em !important; line-height: 0.2em !important; font-size: 25px; }
+  .cms-page .rte .stylist .chat_with_stylist .wrapper .content { letter-spacing: 0.066667rem !important; line-height: 1.6666666666666667rem !important; }
+}
+@media(max-width:767px) {
+  .stylist .service ul li { max-width: 48%; }
+}
+@media(max-width:414px) {
+  .stylist .service ul li { max-width: 100%; }
+  .cms-page .rte .stylist .block .wrapper h2 { font-size: 19px; }
+  .stylist .block .wrapper .chat { font-size: 10px; }
+  .cms-page .rte .stylist .mail { margin: 15px 0 !important; font-size: 12px; }
+  .cms-page .rte .stylist h2 { font-size: 15px; margin-top: 25px !important; margin-bottom: 25px !important; letter-spacing: .4rem !important; }
+  .cms-page .rte .stylist .service ul h2 { font-size: 15px; }
+  .stylist .service ul li p { font-size: 13px; }
+  .cms-page .rte .stylist .chat_with_stylist .wrapper .desc { font-size: 15px; }
+}
+@media(max-width:1200px) {
+  .page-content { padding: 35px 40px; }
+}
+@media(max-width:992px) {
+  .page-content { max-width: 100%; padding: 20px 15px; }
+}
+
+
+.cms-page  .rte h1, .cms-page  .rte h2, .cms-page  .rte h3, .cms-page  .rte h4, .cms-page  .rte h5, .cms-page  .rte h6 { color: #444;font-family:'Helvetica Neue light'; }
+.cms-page  .rte  h1 { font-size: 30px; margin: 30px 0 10px; text-transform: capitalize; }
+.cms-page  .rte  h2 { font-size: 26px; margin: 25px 0 10px; text-transform: capitalize; }
+.cms-page  .rte  h3 { font-size: 22px; padding: 60px 0 0; margin: 30px 0 10px; letter-spacing: 0px; text-transform: capitalize; }
+.cms-page  .rte  h4 { font-size: 20px; margin: 20px 0 10px; letter-spacing: 0px; font-weight: 400; text-transform: capitalize; }
+.cms-page  .rte  h5 { font-size: 19px; margin: 15px 0 5px; text-transform: capitalize; }
+.cms-page  .rte  h6 { font-size: 17px; margin: 15px 0 5px; text-transform: capitalize; }
+.cms-page  .rte  p { font-size: 14px; margin: 5px 0 15px; color: #333;font-family:'Helvetica Neue light'; }
+.cms-page  .rte a { color: #333;font-family:'Helvetica Neue light';}
+.cms-page  .rte  ul li ,.cms-page  .rte  ol li { font-size: 14px; margin: 10px 0; color: #333;font-family:'Helvetica Neue light'; }
+.cms-page  .rte  a.back-top-btn { padding: 16px 24px; border: 1px solid #000; margin: 15px 0 0; display: inline-block; border-radius: 12px; font-size: 16px; font-weight: 600; text-transform: capitalize; line-height: normal; transition: all 0.3s ease; color: #333; }
+.cms-page  .rte  a.back-top-btn:hover { background: #000; color: #fff;}
+.cms-page  .rte ol { list-style: disc;}
+.cms-page  .rte .privacy-terms-list ul > li { margin: 20px 0; }
+.cms-page  .rte  .assistance-list-container h3, .cms-page  .rte .accessibility-container h3:first-child, .cms-page  .rte .privacy-terms-list h3 { padding: 0; margin: 20px 0 10px; }
+.cms-page  .rte .privacy-terms-list ul ol{list-style: decimal;}
+@media(max-width:992px) {
+    .cms-page  .rte  h1 { font-size: 26px; }
+    .cms-page  .rte  h2 { font-size: 22px; }
+    .cms-page  .rte  h3 { font-size: 20px; padding: 20px 0 0; margin: 20px 0 5px; }
+    .cms-page  .rte  h4 { font-size: 18px; }
+    .cms-page  .rte  h5 { font-size: 17px; }
+    .cms-page  .rte  h6 { font-size: 15px; }
+    .cms-page  .rte  p { font-size: 13px; }
+    .cms-page  .rte  ul li { font-size: 13px; }
+    .cms-page  .rte  h3 ul { margin: 0 0 15px 20px; }
+    .cms-page  .rte  a.back-top-btn { padding: 10px 18px; font-size: 15px; }
+}
+
+/* about-us page start */
+/* .cms-page .rte .about-us-page {font-family: Helvetica Neue Light !important;} */
+.cms-page .rte .about-us-page .about-banner { position: relative; }
+.cms-page .rte .about-us-page .about-banner-img img { max-width: 100%; width: 100%; }
+.cms-page .rte .about-us-page .about-content { position: absolute; bottom: 0; right: 0; width: 100%; }
+.cms-page .rte .about-us-page .about-main-content h3 { font-size: 46px; color: #fff; width: 100%; text-align: left; padding-left: 340px; letter-spacing: 8px; font-weight: 400;font-family:'Helvetica Neue light';}
+.cms-page .rte .about-us-page .about-main-content { display: flex; flex-flow: column wrap; justify-content: center; align-items: flex-end; width: 100%; }
+.cms-page .rte .about-us-page .about-50-50-bar { margin: 12px 0 0; }
+.cms-page .rte .about-us-page .about-50-50-section { display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center; }
+.cms-page .rte .about-us-page .module-50-50-img-container { max-width: calc(50% - 15px); width: 100%; }
+.cms-page .rte .about-us-page a.module-img-link { position: relative; display: block; width: 100%; height: 100%; }
+.cms-page .rte .about-us-page a.module-img-link .module-50-50-img { height: 100%; }
+.cms-page .rte .about-us-page .module-50-50-img-container img { width: 100%; height: 100%; }
+.cms-page .rte .about-us-page .module-50-50-img-content { position: absolute; top: 50%; left: 50%; z-index: 98; transform: translate(-50%, -50%); }
+.cms-page .rte .about-us-page .module-50-50-img-content h4 { color: #fff; letter-spacing: 9.3px; font-size: 56px; font-weight: 400; margin: 0;font-family: 'Helvetica Neue light';}
+.about-us-page .bottom-bar { margin-top: 12px; width: 100%; background: #000; text-align: center; padding: 14px 0; }
+.cms-page .rte .about-us-page .bottom-bar-content h2 { font-size: 17.4px; letter-spacing: 15.8px; margin: 0; color: #ffffffbf; line-height: 1;font-family: 'Helvetica Neue light';}
+.about-us-page .about-product-grid { display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center; }
+.about-us-page a.product-conatiner { width: calc(50% - 7px); position: relative; }
+.about-us-page a.product-conatiner .product-grid-img img { max-width: 100%; width: 100%; }
+.about-us-page .product-grid-content { position: absolute; top: 12.5%; left: 50%; transform: translate(-50%, -12.5%); width: 70%; }
+.cms-page .rte .about-us-page .product-grid-content h5 { font-size: 56px; font-weight: 400; letter-spacing: 2.2px; line-height: 1; margin: 0 0 35px; padding: 0; text-align: center;font-family: Helvetica Neue Light;}
+.cms-page .rte .about-us-page .product-grid-content span { font-size: 16.7px; font-weight: 400; letter-spacing: 2.2px; line-height: 1.5; text-align: center; display: block;font-family: 'Helvetica Neue Light';}
+.cms-page .rte .about-us-page .white-text .product-grid-content h5 { color: #fff; padding: 0; }
+.cms-page .rte .about-us-page .white-text .product-grid-content span { color: #fff; }
+.cms-page .rte .about-us-page .about-beauty-grid { display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center; }
+.cms-page .rte .about-us-page .about-beauty-grid .product-container, .cms-page .rte .about-beauty-grid .product-text-conatiner { width: calc(50% - 15px); }
+.cms-page .rte .about-us-page .about-beauty-grid .product-text-conatiner h5 { font-size: 26.7px; font-weight: 400; padding: 0px 0 0 140px; letter-spacing: 20px; line-height: 3;font-family:'Helvetica Neue Light';}
+.cms-page .rte .about-us-page .about-video-section { max-width: 100%; width: 100%; margin: 12px 0; }
+.about-main-content img { width: 53.5%; }
+.cms-page .rte .about-us-page a.product-conatiner .product-content-overlay { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: max-content; }
+.cms-page .rte .about-us-page a.product-conatiner .product-content-overlay h5 { font-size: 56px; font-weight: 400; line-height: 1; color: #fff; letter-spacing: 2.2px; margin: 0;font-family: 'Helvetica Neue Light';}
+.cms-page .rte .about-us-page  .about-video-section iframe { border: none; }
+@media(max-width:1200px) {
+    .cms-page .rte .about-us-page .about-beauty-grid .product-text-conatiner h5 { padding: 0; font-size: 23px; }
+    .cms-page .rte .about-us-page a.product-conatiner .product-content-overlay h5, .cms-page .rte .about-us-page .product-grid-content h5, .cms-page .rte .about-us-page .module-50-50-img-content h4 { font-size: 42px; }
+    .cms-page .rte .about-us-page  .product-grid-content h5 { margin: 0 0 5px; }
+    .cms-page .rte .about-us-page .about-main-content h3 { font-size: 38px; padding: 0 0 0 20px; margin: 0 0 25px; }
+    .about-us-page .product-grid-content { width: 100%; }
+    .about-main-content img { width: 70.5%; }
+}
+@media(max-width:992px) {
+    .cms-page .rte .about-us-page .about-beauty-grid .product-text-conatiner h5 { padding: 0 0 0 30px; font-size: 20px; letter-spacing: 10px; }
+    .about-main-content img { width: 67%; }
+    .cms-page .rte .about-us-page .bottom-bar-content h2 { font-size: 15px; letter-spacing: 10px; }
+    .cms-page .rte .about-us-page a.product-conatiner .product-content-overlay h5, .cms-page .rte .about-us-page .product-grid-content h5, .cms-page .rte .about-us-page .module-50-50-img-content h4 { font-size: 32px; }
+    .cms-page .rte .about-us-page .product-grid-content span { font-size: 14px; }
+}
+@media(max-width:767px) {
+    .cms-page .rte .about-us-page .about-main-content h3 { font-size: 22px; padding: 0 0 0 10px; margin: 0; letter-spacing: 5.5px; line-height: 1.5; }
+    .cms-page .rte .about-us-page a.product-conatiner .product-content-overlay h5, .cms-page .rte .about-us-page .product-grid-content h5, .cms-page .rte .about-us-page .module-50-50-img-content h4 { font-size: 18px; letter-spacing: 0.6px; }
+    .cms-page .rte .about-us-page .bottom-bar-content h2 { font-size: 11.2px; letter-spacing: 3.3px; }
+    .cms-page .rte .about-us-page .white-text .product-grid-content span { font-size: 11.2px; letter-spacing: 2px; }
+    .cms-page .rte .about-us-page .white-text .product-grid-content h5 { padding: 0 10px; }
+    .cms-page .rte .about-us-page .about-beauty-grid .product-text-conatiner h5 { font-size: 8.8px; letter-spacing: 5.5px; padding: 0; }
+    .cms-page .rte .about-us-page .about-50-50-bar { margin: 7px 0 0; }
+    .about-us-page .bottom-bar { margin: 7px 0 0; }
+    .cms-page .rte .about-us-page .about-video-section { margin: 7px 0; }
+    .about-us-page .about-product-grid { flex-flow: column wrap; gap: 10px; }
+    .about-us-page .about-product-grid .product-conatiner { width: 100%; }
+    .cms-page .rte .about-us-page .module-50-50-img-container:nth-child(2) img { width: 90%; height: auto; }
+    .about-us-page .product-grid-content { width: 75%; }
+}
+
+/* about-us page end */

@@ -1,0 +1,178 @@
+<nav class="header__inline-menu">
+  <span class="overlay-menu"></span>
+  <ul class="header-menu header-menu-top">
+     {% for block in section.blocks %}
+       <style>
+         .header-menu-top .item-{{ block.id }}.menu-image-left .sub-menu-view .sub-menu-grid .item:last-child {
+            order: 1;
+        }
+        .header-menu-top .item-{{ block.id }}.menu-image-left .sub-menu-view .sub-menu-grid .item {
+            order: 2;
+        }
+       </style>
+    {% if block.type == "shop_category" %}
+      <li class="nav-item item-{{ block.id }} {{ block.settings.select_menu_image }}">
+         <a href="{{ block.settings.title_url }}" class="nav-link">
+                  {{ block.settings.title }}
+              </a>
+        <div class="sub-menu-view">
+          <div class="sub-menu-grid  {% if linklists[block.settings.category_nav].links != blank %} is-category-menu{% endif %}">
+          {% if linklists[block.settings.category_nav].links != blank %}
+            <div class="item category-menu-view">
+              {% for column in linklists[block.settings.category_nav].links %}
+                <h4><a href="{{ column.url }}" title="{{ column.title }}" class="menucol-item {{ column.title | downcase | replace: ' ', '-' }}">{{ column.title }}</a></h4>
+                {% if column.links != blank %}
+                  <ul class="sub-menu-list nested-menu-list">
+                    {% for navSection in column.links %}
+                      <li  {% if navSection.links != blank %} class="subnav" {% endif %}>
+                        <a href="{{ navSection.url }}" title="{{ navSection.title }}" class="submenucol-item {{ navSection.title | downcase | replace: ' ', '-' }}">{{ navSection.title }}</a>
+                        {% if navSection.links != blank %}
+                          <ul class="nested-submenu-list">
+                            {% for subNavSection in navSection.links %}
+                              <li><a href="{{ subNavSection.url }}" title="{{ subNavSection.title }}" class="submenucol-item {{ subNavSection.title | downcase | replace: ' ', '-' }}">{{ subNavSection.title }}</a></li>
+                            {% endfor %}
+                          </ul>
+                        {% endif %}
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
+
+            {% if linklists[block.settings.shop_nav_1].links != blank %}
+                <div class="item">
+                  {% for column in linklists[block.settings.shop_nav_1].links %}
+                   <h4><a href="{{ column.url }}" title="{{ column.title }}" class="menucol-item {{ column.title | downcase |  replace: ' ', '-' }}" >{{ column.title }}</a></h4>
+                    {% if column.links != blank %}
+                     <ul class="sub-menu-list">
+                          {% for navSection in column.links %}
+                            <li>
+                              <a href="{{ navSection.url }}" title="{{ navSection.title }}" class="submenucol-item {{ navSection.title | downcase |  replace: ' ', '-' }}">{{ navSection.title }}</a>
+                            </li>
+                          {% endfor %}
+                      </ul>
+                      {% endif %}
+                  {% endfor %}
+                </div>
+            {% endif %}
+            {% if linklists[block.settings.shop_nav_2].links != blank %}
+                <div class="item">
+                  {% for column in linklists[block.settings.shop_nav_2].links %}
+                   <h4><a href="{{ column.url }}" title="{{ column.title }}" class="menucol-item {{ column.title | downcase |  replace: ' ', '-' }}" >{{ column.title }}</a></h4>
+                    {% if column.links != blank %}
+                     <ul class="sub-menu-list">
+                          {% for navSection in column.links %}
+                            <li>
+                              <a href="{{ navSection.url }}" title="{{ navSection.title }}" class="submenucol-item {{ navSection.title | downcase |  replace: ' ', '-' }}">{{ navSection.title }}</a>
+                            </li>
+                          {% endfor %}
+                      </ul>
+                      {% endif %}
+                  {% endfor %}
+                </div>
+            {% endif %}
+            {% if linklists[block.settings.shop_nav_3].links != blank %}
+                <div class="item">
+                  {% for column in linklists[block.settings.shop_nav_3].links %}
+                   <h4><a href="{{ column.url }}" title="{{ column.title }}" class="menucol-item {{ column.title | downcase |  replace: ' ', '-' }}" >{{ column.title }}</a></h4>
+                    {% if column.links != blank %}
+                     <ul class="sub-menu-list">
+                          {% for navSection in column.links %}
+                            <li>
+                              <a href="{{ navSection.url }}" title="{{ navSection.title }}" class="submenucol-item {{ navSection.title | downcase |  replace: ' ', '-' }}">{{ navSection.title }}</a>
+                            </li>
+                          {% endfor %}
+                      </ul>
+                      {% endif %}
+                  {% endfor %}
+                </div>
+            {% endif %}
+            {% if linklists[block.settings.shop_nav_4].links != blank %}
+                <div class="item">
+                  {% for column in linklists[block.settings.shop_nav_4].links %}
+                   <h4><a href="{{ column.url }}" title="{{ column.title }}" class="menucol-item {{ column.title | downcase |  replace: ' ', '-' }}" >{{ column.title }}</a></h4>
+                    {% if column.links != blank %}
+                     <ul class="sub-menu-list">
+                          {% for navSection in column.links %}
+                            <li>
+                              <a href="{{ navSection.url }}" title="{{ navSection.title }}" class="submenucol-item {{ navSection.title | downcase |  replace: ' ', '-' }}">{{ navSection.title }}</a>
+                            </li>
+                          {% endfor %}
+                      </ul>
+                      {% endif %}
+                  {% endfor %}
+                </div>
+            {% endif %}
+            {% if linklists[block.settings.shop_nav_5].links != blank %}
+                <div class="item">
+                  {% for column in linklists[block.settings.shop_nav_5].links %}
+                   <h4><a href="{{ column.url }}" title="{{ column.title }}" class="menucol-item {{ column.title | downcase |  replace: ' ', '-' }}" >{{ column.title }}</a></h4>
+                    {% if column.links != blank %}
+                     <ul class="sub-menu-list">
+                          {% for navSection in column.links %}
+                            <li>
+                              <a href="{{ navSection.url }}" title="{{ navSection.title }}" class="submenucol-item {{ navSection.title | downcase |  replace: ' ', '-' }}">{{ navSection.title }}</a>
+                            </li>
+                          {% endfor %}
+                      </ul>
+                      {% endif %}
+                  {% endfor %}
+                </div>
+            {% endif %}
+            {% if block.settings.img_url != blank %}
+            <div class="item {% if linklists[block.settings.category_nav].links != blank %} cate-item{% endif %}">
+              <a href="{{ block.settings.urk_url }}" class="submenu-img-link">
+              <div class="sub-menu-img">
+                <img src="{{block.settings.img_url | img_url : 'master' }}" alt="{{block.settings.img_title}}" />
+                
+              </div>
+              {% if block.settings.img_title != blank %}  
+                <span>{{block.settings.img_title}}</span>
+              {% endif %}  
+              </a>
+          </div>
+          {% endif %}    
+        </div>
+        </div> 
+          
+      </li>
+      {% endif %}      
+     {% if block.type == "Dropdown" %}
+       <li class="nav-item nav-dropdown">
+         <a href="{{ block.settings.title_url }}" class="nav-link">
+                  {{ block.settings.title }}
+              </a>
+         <div class="hdr-submenus">
+            {% for link in linklists[block.settings.nav_dropdown].links %}
+              <div class="nav-child">
+                <a href="{{ link.url }}">
+                  {{ link.title }}
+                </a>
+              </div>
+            {% endfor %}
+          </div>
+       </li>
+     {% endif %}  
+    {% endfor %}
+  </ul>
+</nav>
+
+<script>
+    const cateItem = document.querySelector('.sub-menu-view .sub-menu-grid .item');
+   
+   const menuItems = document.querySelectorAll('.sub-menu-view .sub-menu-grid .item .sub-menu-list .subnav');
+
+menuItems.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      cateItem.classList.add('cateItemsub-active');
+        item.classList.add('subnav-active');
+    });
+    item.addEventListener('mouseleave', () => {
+        cateItem.classList.remove('cateItemsub-active');
+        menuItems.forEach(item => item.classList.remove('subnav-active'));
+    });
+});
+
+</script>

@@ -1,0 +1,35 @@
+{% capture description %}
+  {%- if product.empty? -%}
+    {{ 'home_page.onboarding.product_description' | t }}
+  {%- else -%}
+    {{ product.description }}
+  {%- endif -%}
+{% endcapture %}
+{%- if is_tab -%}
+  {% assign title = 'products.product.description' | t %}
+  {%- render 'tab', id: id, title: title, content: description -%}
+{%- else -%}
+
+{% assign first_available_variant = product.selected_or_first_available_variant %}
+{% if first_available_variant %}
+  {% assign style_number = first_available_variant.metafields.custom.style_number %}
+  {% assign descript = first_available_variant.metafields.custom.pdp_description %}
+  <div class="rte">
+  {% if style_number %}
+    <span class="style-num">{% comment %}STYLE# {{ style_number }}{% endcomment %} Description & Details</span>
+  {%- else -%}
+    <span class="style-num">Description & Details</span>
+  {% endif %}
+</div>
+  <div class="rte-des">
+    {% if description %}
+   {{ description }}
+  {% endif %}
+  </div>
+{% endif %}
+ {% comment %} 
+  <div class="rte">
+    {{ description }}
+  </div>
+{% endcomment %}
+{%- endif -%}
